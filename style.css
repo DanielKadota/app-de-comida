@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root{
+    /*fontes*/
+    --fonte_titulo:"Young Serif", serif;
+    --fonte_paragrafos:"Outfit", sans-serif;
+
+    /*cores*/
+    --cor_titulos:#663727;
+    --cor_titulo_tempo_de_preparo:#7a2d58;
+    --fundo_tempo_de_preparo:#fdeef5;
+
+    /*espaçamentos*/
+
+    --espaço_margin_lateral:25px;
+    --espaço_margin_listas:12px;
+
+    /*tamanhos*/
+    --tamanho_fonte_listas:17px;
+    --tamanho_fonte_titulos:30px;
+}
+img{
+    width: 100%; 
+}
+header > h1{
+    font-size: 35px;
+    line-height: 38px;
+    font-family: var(--fonte_titulo);
+    margin: var(--espaço_margin_lateral);
+
+}
+p{
+    font-size: 18px;
+    margin: var(--espaço_margin_lateral);
+    font-family: var(--fonte_paragrafos);
+}
+
+/*tempo de preparo*/
+
+#Tempo_de_preparo{
+    background-color: var(--fundo_tempo_de_preparo);
+    margin: var(--espaço_margin_lateral);
+    padding: 20px;
+}
+#titulo_preparo{
+    color: var(--cor_titulo_tempo_de_preparo);
+    font-family: var(--fonte_titulo);
+}
+.time_preparo{
+    margin: var(--espaço_margin_listas);
+    font-size: var(--tamanho_fonte_listas);
+    font-family: var(--fonte_paragrafos);
+}
+.time_preparo::marker{
+    color: var(--cor_titulo_tempo_de_preparo);
+}
+
+/*ingredientes*/
+
+/*nessa usei espaçamentos diferentes das variais por nao ter o espaço geral das demais sections*/
+
+#ingredientes{
+    margin: var(--espaço_margin_lateral);
+}
+#ingredientes > h2{
+    color: var(--cor_titulos);
+    font-size: var(--tamanho_fonte_titulos);
+    font-family: var(--fonte_titulo);
+    margin: 12px;
+}
+
+.list_ingredientes{
+    margin: 10px;
+    font-size: var(--tamanho_fonte_listas);
+    font-family: var(--fonte_paragrafos);
+}
+.list_ingredientes::marker{
+    color: var(--cor_titulos);
+}
+
+/*instruções*/
+
+
+#instrucoes{
+    margin: var(--espaço_margin_lateral);
+}
+#instrucoes > h2{
+    color: var(--cor_titulos);
+    font-size: var(--tamanho_fonte_titulos);
+    font-family: var(--fonte_titulo);
+}
+
+.list_intrucoes{
+    padding-left: 10px;
+    margin: var(--espaço_margin_listas);
+    font-size: var(--tamanho_fonte_listas);
+    font-family: var(--fonte_paragrafos);
+
+}
+.list_intrucoes::marker{
+    color: var(--cor_titulos);
+    
+
+}
+
+/*Nutrição*/
+
+
+#nutricao{
+    margin: var(--espaço_margin_lateral);
+}
+#nutricao > h2{
+    color: var(--cor_titulos);
+    font-size: var(--tamanho_fonte_titulos);
+    font-family: var(--fonte_titulo);
+}
+#p_nutricao{
+    font-size: 16px;
+    font-family: var(--fonte_paragrafos);
+}
+.linha_nutricao{
+   display: flex;
+   justify-content: space-around;
+}
+
+.gramas{
+    color: var(--cor_titulos);
+   
+}
+
+@media (min-width :1200px){
+
+    body{
+        background-color: #F2E4D6;
+        padding: 40px;
+    }
+
+    article{
+        margin: auto;
+        border-radius: 12px;
+        width: 650px;
+        background-color: white;
+    }
+
+    img{
+        margin: auto;
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-left: 33px;
+        width: 90%;
+    }
+    
+    #nutricao{
+        padding-bottom: 40px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
